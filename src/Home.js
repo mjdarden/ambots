@@ -1,13 +1,13 @@
 import React from 'react'
 import TopBar from './TopBar'
 
-let TeamMembers = () => {
+let Home = () => {
   return (
     <div>
       <TopBar />
-      Hey this is the Team member Page!
+      Hey this is the Home Page!
     </div>
   )
 }
 
-export default TeamMembers
+export default Home

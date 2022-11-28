@@ -1,13 +1,23 @@
-import React from "react"
-import TopBar from './TopBar'
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom'
+import TeamMembers from './TeamMembers'
+import Home from './Home'
 
 let App = () => {
   return (
-    <div>
-      <TopBar/>
-      Hello!
-    </div>
-  )
+    <Router>
+      <div>
+        <Routes>
+          <Route path='/teammembers' element={<TeamMembers/>} />
+          <Route path='/' element={<Home/>} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App
